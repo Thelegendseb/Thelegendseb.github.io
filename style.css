@@ -7,6 +7,13 @@ body{
 ==================TOP======================
 */
 
+#flowfield_canvas{
+  background:black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 #nameplate{
   background: transparent;
   width:100% ;
@@ -20,19 +27,13 @@ body{
 
 #mainheader{
   color: rgba(255, 255, 255, 0.8);
+  top:20px;
   font-size: 150px;
 }
 
 #subheader{
   color: rgba(255, 255, 255, 0.8);
   font-size: 25px;
-}
-
-#flowfield_canvas{
-  background:black;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
 }
 
 /*
@@ -52,3 +53,23 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/*
+#id::after{
+  content: "";
+  width: 10px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+
+  animation: cursor-blink 1.5s steps(2) infinite;
+
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+*/
