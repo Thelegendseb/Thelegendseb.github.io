@@ -1,16 +1,14 @@
 var num = 1000;
 var noiseScale=500, noiseStrength=1;
 var particles = [num];
+var id = 'flowfield_canvas';
 
 function setup() {
-
-  var id = 'flowfield_canvas';
 
   var elem = document.getElementById(id);
   var properties = window.getComputedStyle(elem, null);
   var height = properties.height;
   var width = properties.width;
-
   var c = createCanvas(parseInt(width),parseInt(height));
   
   c.parent(id);
@@ -27,7 +25,11 @@ function setup() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  var elem = document.getElementById(id);
+  var properties = window.getComputedStyle(elem, null);
+  var height = properties.height;
+  var width = properties.width;
+  resizeCanvas(parseInt(width),parseInt(height));
 }
 function draw() {
   // background(0);
