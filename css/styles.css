@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.5 (https://startbootstrap.com/theme/stylish-portfolio)
 * Copyright 2013-2022 Start Bootstrap
@@ -10,13 +11,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
-    
-  --header-title-color: #e6e6e6;
-  --header-subtitle-color:#e6e6e6;
-  --header-button-bordercolor:#e6e6e6;
-  --header-button-color:#e6e6e6;     
-    
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -26,6 +22,19 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+
+  /*======SELF DEFINED COLORS======*/
+
+  --header-title-color: #e6e6e6;
+  --header-subtitle-color:#e6e6e6;
+  --header-button-bordercolor:#e6e6e6;
+  --header-button-color:#e6e6e6;     
+
+  --nav-primary-color: #e6e6e6;
+  --nav-text-color: #000000;
+
+   /*======SELF DEFINED COLORS======*/
+
 }
 
 *,
@@ -55,6 +64,22 @@ body {
 }
 
 /* ======MY ADDITIONS====== */
+
+/* ======NAVIGATION BAR====== */
+
+#sidebar-wrapper {
+  background-color: var(--nav-primary-color);
+}
+
+#nav-body {
+  background-color: var(--nav-primary-color);
+}
+
+#nav-body > li > a {
+  color: var(--nav-text-color);
+}
+
+/* ======NAVIGATION BAR====== */
 
 /* ======HEADER====== */
 
@@ -87,7 +112,40 @@ color: var(--header-button-color);
 
 /* ======HEADER====== */
 
+/* ======ABOUT====== */
 
+#about {
+  /* Doesnt work?!?! */
+  background-color: white;
+   /* Doesnt work?!?! */
+  border-style: solid;
+  border-radius: 3px;
+  border-color: white;
+}
+
+#about-container {
+  color: white;
+}
+
+/* ======ABOUT====== */
+
+/* ======SERVICES====== */
+
+
+
+/* ======SERVICES====== */
+
+/* ======PORTFOLIO====== */
+
+
+
+/* ======PORTFOLIO====== */
+
+/* ======CONTACT====== */
+
+
+
+/* ======CONTACT====== */
 
 /* ======MY ADDITIONS====== */
 
@@ -11341,7 +11399,6 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 

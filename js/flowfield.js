@@ -42,18 +42,20 @@ function draw() {
   }
 }
 
-class Particle{
+class Particle {
   constructor(_loc,_dir,_speed){
     this.loc = _loc;
     this.dir = _dir;
     this.speed = _speed;
   	// var col;
   }
+
   run() {
     this.move();
     this.checkEdges();
     this.update();
   }
+
   move(){
     let angle=noise(this.loc.x/noiseScale, this.loc.y/noiseScale, frameCount/noiseScale)*TWO_PI*noiseStrength; //0-2PI
     this.dir.x = cos(angle);
@@ -63,6 +65,7 @@ class Particle{
     vel.mult(this.speed*d); //vel = vel * (speed*d)
     this.loc.add(vel); //loc = loc + vel
   }
+
   checkEdges(){
     //float distance = dist(width/2, height/2, loc.x, loc.y);
     //if (distance>150) {
@@ -71,8 +74,10 @@ class Particle{
       this.loc.y = random(height);
     }
   }
-  update(){
+
+  update() {
     fill(0,255,0);
     ellipse(this.loc.x, this.loc.y, this.loc.z);
   }
+
 }
