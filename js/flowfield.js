@@ -31,6 +31,7 @@ function windowResized() {
   var width = properties.width;
   resizeCanvas(parseInt(width),parseInt(height));
 }
+
 function draw() {
   // background(0);
   fill(0, 10);
