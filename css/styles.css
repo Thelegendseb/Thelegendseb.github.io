@@ -126,7 +126,7 @@ color: var(--p-white);
 /* ======ABOUT====== */
 
 #about {
-  background-color: var(--p-darkgray);
+  background-color: var(--p-brightgray);
 }
 
 #about-container {
