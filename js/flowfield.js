@@ -34,12 +34,20 @@ function windowResized() {
 }
 
 function draw() {
-  fill(0, 10);
-  noStroke();
-  rect(0, 0, width, height);
+  if(!firstit)
+  {
+    firstit = true;
+    background(12, 12, 12);
+  }
+  else
+  {
+    fill(0, 10);
+    noStroke();
+    rect(0, 0, width, height);
     for (let i=0; i<particles.length; i++) {
       particles[i].run();
     }
+  }
 
 }
 
