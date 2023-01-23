@@ -1,4 +1,5 @@
 var num = 500;
+var firstit = false;
 var noiseScale=500, noiseStrength=1;
 var particles = [num];
 var id = 'flowfield-canvas';
@@ -33,13 +34,13 @@ function windowResized() {
 }
 
 function draw() {
-  // background(0);
   fill(0, 10);
   noStroke();
   rect(0, 0, width, height);
-  for (let i=0; i<particles.length; i++) {
-    particles[i].run();
-  }
+    for (let i=0; i<particles.length; i++) {
+      particles[i].run();
+    }
+
 }
 
 class Particle {
@@ -76,7 +77,8 @@ class Particle {
   }
 
   update() {
-    fill(0,255,0);
+  fill(46, 255, 116);
+    //fill(46, 133, 255);
     ellipse(this.loc.x, this.loc.y, this.loc.z);
   }
 

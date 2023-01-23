@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 /*!
-* Start Bootstrap - Stylish Portfolio v6.0.5 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
-*/
-/*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -25,13 +20,12 @@
 
   /*======SELF DEFINED COLORS======*/
 
-  --header-title-color: #e6e6e6;
-  --header-subtitle-color:#e6e6e6;
-  --header-button-bordercolor:#e6e6e6;
-  --header-button-color:#e6e6e6;     
-
-  --nav-primary-color: #e6e6e6;
-  --nav-text-color: #000000;
+  --p-black: #000000;
+  --p-darkgray: #0c0c0c;
+  --p-brightgray: #1a1c1b;
+  --p-white: #e6e6e6;
+  --p-darkgreen: #003300;
+  --p-brightgreen: #2eff74;
 
    /*======SELF DEFINED COLORS======*/
 
@@ -65,18 +59,35 @@ body {
 
 /* ======MY ADDITIONS====== */
 
+/* ======ANIMATIONS====== */
+
+#header-button {
+  transition: 0.7s;
+}
+
+#header-button:hover {
+  transform: scale(1.2);
+  background-color: var(--p-brightgreen);
+  color: var(--p-black);
+  border : none;
+  font-weight: bold;
+  box-shadow : 0 0 40px var(--p-brightgreen);
+}
+
+/* ======ANIMATIONS====== */
+
 /* ======NAVIGATION BAR====== */
 
 #sidebar-wrapper {
-  background-color: var(--nav-primary-color);
+  background-color: var(--p-brightgray);
 }
 
 #nav-body {
-  background-color: var(--nav-primary-color);
+  background-color: var(--p-brightgray);
 }
 
 #nav-body > li > a {
-  color: var(--nav-text-color);
+  color: var(--p-brightgreen);
 }
 
 /* ======NAVIGATION BAR====== */
@@ -97,17 +108,17 @@ background-color: transparent;
 }
 
 #header-title {
-color: var(--header-title-color);
+color: var(--p-white);
 }
 
 #header-subtitle {
-color: var(--header-subtitle-color);
+color: var(--p-white);
 }
 
 #header-button {
 background-color: transparent;
-border-color: var(--header-button-bordercolor);
-color: var(--header-button-color);
+border-color: var(--p-white);
+color: var(--p-white);
 }
 
 /* ======HEADER====== */
@@ -115,16 +126,11 @@ color: var(--header-button-color);
 /* ======ABOUT====== */
 
 #about {
-  /* Doesnt work?!?! */
-  background-color: white;
-   /* Doesnt work?!?! */
-  border-style: solid;
-  border-radius: 3px;
-  border-color: white;
+  background-color: var(--p-darkgray);
 }
 
 #about-container {
-  color: white;
+  color: var(--p-white); 
 }
 
 /* ======ABOUT====== */
