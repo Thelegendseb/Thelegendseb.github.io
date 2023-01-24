@@ -20,7 +20,7 @@
 
   /*======SELF DEFINED COLORS======*/
 
-  --p-darkgray: #0c0c0c;
+  --p-darkgray: #181818;
   --p-brightgray: #1a1c1b;
   --p-white: #e6e6e6;
   --p-brightgreen: #2eff74;
@@ -63,11 +63,13 @@ body {
   transition: 0.7s;
 }
 
-#about-button {
+#about-button, #callout-button {
   transition: 0.5s;
 }
 
-#header-button:hover, #about-button:hover {
+#header-button:hover, 
+#about-button:hover, 
+#callout-button:hover {
   transform: scale(1.2);
   background-color: var(--p-brightgreen);
   color: var(--p-darkgray);
@@ -208,6 +210,26 @@ color: var(--p-white);
 }
 
 /* ======SERVICES====== */
+
+/* ======CALLOUT====== */
+
+.callout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#callout-button {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: var(--p-brightgray);
+  border-color: var(--p-white);
+  border-style: solid;
+  border-width: 0.2rem;
+  color: var(--p-white);
+}
+
+/* ======CALLOUT====== */
 
 /* ======PORTFOLIO====== */
 
