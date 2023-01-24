@@ -63,13 +63,14 @@ body {
   transition: 0.7s;
 }
 
-#about-button, #callout-button {
+#about-button, #callout-button, #contact > div > a {
   transition: 0.5s;
 }
 
 #header-button:hover, 
 #about-button:hover, 
-#callout-button:hover {
+#callout-button:hover,
+#contact > div > a:hover {
   transform: scale(1.2);
   background-color: var(--p-brightgreen);
   color: var(--p-darkgray);
@@ -84,11 +85,11 @@ animation: greenglow 2.5s ease-in-out infinite alternate;
 */
 @-webkit-keyframes greenglow {
   from {
-    text-shadow: 0 0 5px #000, 0 0 10px var(--p-brightgreen), 0 0 20px var(--p-brightgray), 0 0 30px var(--p-brightgray), 0 0 40px var(--p-brightgray), 0 0 50px var(--p-brightgray), 0 0 55px var(--p-brightgray);
+    text-shadow: 0 0 2px #000, 0 0 4px var(--p-brightgreen), 0 0 6px var(--p-brightgray), 0 0 8px var(--p-brightgray), 0 0 10px var(--p-brightgray), 0 0 12px var(--p-brightgray), 0 0 14px var(--p-brightgray);
   }
 
   to {
-    text-shadow: 0 0 5px #000, 0 0 10px var(--p-brightgreen), 0 0 20px var(--p-brightgreen), 0 0 30px var(--p-brightgreen), 0 0 40px var(--p-brightgreen), 0 0 50px var(--p-brightgreen), 0 0 55px var(--p-brightgreen);
+    text-shadow: 0 0 2px #000, 0 0 4px var(--p-brightgreen), 0 0 6px var(--p-brightgreen), 0 0 8px var(--p-brightgreen), 0 0 10px var(--p-brightgreen), 0 0 12px var(--p-brightgreen), 0 0 14px var(--p-brightgreen);
   }
 }
 
@@ -209,6 +210,20 @@ color: var(--p-white);
   color: var(--p-white);
 }
 
+/*
+#services > div > div > div {
+  width: 20%;
+  height: 40%;
+  padding: 2%;
+  margin: 0.25%;
+  border: 2px solid var(--p-brightgreen);
+}
+
+#services-container{
+  border: 3px solid red;
+}
+*/
+
 /* ======SERVICES====== */
 
 /* ======CALLOUT====== */
@@ -252,6 +267,17 @@ color: var(--p-white);
 
 #contact{
   background-color: var(--p-darkgray);
+}
+
+#contact > div > a {
+  background-color: var(--p-darkgray);
+  color: var(--p-brightgreen);
+}
+
+#contact > div > h2 {
+  color: var(--p-brightgreen);
+  padding-bottom: 4.5%;
+  animation: greenglow 2s ease-in-out infinite alternate;
 }
 
 /* ======CONTACT====== */
