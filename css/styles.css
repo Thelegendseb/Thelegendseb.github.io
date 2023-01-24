@@ -210,19 +210,10 @@ color: var(--p-white);
   color: var(--p-white);
 }
 
-/*
 #services > div > div > div {
-  width: 20%;
-  height: 40%;
-  padding: 2%;
-  margin: 0.25%;
-  border: 2px solid var(--p-brightgreen);
+  padding-bottom: 10%;
 }
 
-#services-container{
-  border: 3px solid red;
-}
-*/
 
 /* ======SERVICES====== */
 
