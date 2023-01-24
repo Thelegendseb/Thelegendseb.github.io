@@ -222,7 +222,7 @@ color: var(--p-white);
 #callout-button {
   font-weight: bold;
   font-size: 2rem;
-  background-color: var(--p-brightgray);
+  background-color: var(--p-darkgray);
   border-color: var(--p-white);
   border-style: solid;
   border-width: 0.2rem;
@@ -233,15 +233,36 @@ color: var(--p-white);
 
 /* ======PORTFOLIO====== */
 
+#portfolio {
+  background-color: var(--p-brightgray);
+}
 
+#portfolio-title {
+  color: var(--p-brightgreen);
+  font-size: 3rem;
+}
+#portfolio-subtitle {
+  color: var(--p-brightgreen);
+  font-size: 1.5rem;
+}
 
 /* ======PORTFOLIO====== */
 
 /* ======CONTACT====== */
 
-
+#contact{
+  background-color: var(--p-darkgray);
+}
 
 /* ======CONTACT====== */
+
+/* ======BOTTOM====== */
+
+#page-bottom{
+  background-color: var(--p-brightgray);
+}
+
+/* ======BOTTOM====== */
 
 /* ======MY ADDITIONS====== */
 
@@ -11709,7 +11730,7 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(var(--p-brightgreen), 1);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
