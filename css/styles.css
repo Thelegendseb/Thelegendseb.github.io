@@ -20,7 +20,6 @@
 
   /*======SELF DEFINED COLORS======*/
 
-  --p-black: #000000;
   --p-darkgray: #0c0c0c;
   --p-brightgray: #1a1c1b;
   --p-white: #e6e6e6;
@@ -71,10 +70,32 @@ body {
 #header-button:hover, #about-button:hover {
   transform: scale(1.2);
   background-color: var(--p-brightgreen);
-  color: var(--p-black);
+  color: var(--p-darkgray);
   border : none;
   font-weight: bold;
-  box-shadow : 0 0 100% var(--p-brightgreen);
+  box-shadow : 0 0 40px var(--p-brightgreen);
+}
+
+/*
+HOW TO USE
+animation: greenglow 2.5s ease-in-out infinite alternate;
+*/
+@-webkit-keyframes greenglow {
+  from {
+    text-shadow: 0 0 5px #000, 0 0 10px var(--p-brightgreen), 0 0 20px var(--p-brightgray), 0 0 30px var(--p-brightgray), 0 0 40px var(--p-brightgray), 0 0 50px var(--p-brightgray), 0 0 55px var(--p-brightgray);
+  }
+
+  to {
+    text-shadow: 0 0 5px #000, 0 0 10px var(--p-brightgreen), 0 0 20px var(--p-brightgreen), 0 0 30px var(--p-brightgreen), 0 0 40px var(--p-brightgreen), 0 0 50px var(--p-brightgreen), 0 0 55px var(--p-brightgreen);
+  }
+}
+
+#services > div > div > div > span {
+  transition: 0.5s;
+}
+
+#services > div > div > div > span:hover {
+  transform: scale(1.2);
 }
 
 /* ======ANIMATIONS====== */
@@ -140,7 +161,6 @@ color: var(--p-white);
   padding-bottom: 5rem; 
   color: var(--p-brightgreen);
   font-size: 3rem;
-  text-shadow : 0 0 60px var(--p-brightgreen);
 }
 
 #about-button {
@@ -155,7 +175,37 @@ color: var(--p-white);
 
 /* ======SERVICES====== */
 
+#services {
+  background-color: var(--p-darkgray);
+}
 
+#services-title {
+  color: var(--p-white);
+}
+
+#services-subtitle {
+  color: var(--p-white);
+}
+
+/* CIRCLES */
+#services > div > div > div > span {
+  background-color: var(--p-brightgreen);
+}
+
+/* ICONS */
+#services > div > div > div > span > i {
+  color: var(--p-brightgray);;
+}
+
+/* ICON HEADER */
+#services > div > div > div > h4 {
+  color: var(--p-white);
+}
+
+/* ICON CONTEXT */
+#services > div > div > div > p {
+  color: var(--p-white);
+}
 
 /* ======SERVICES====== */
 
