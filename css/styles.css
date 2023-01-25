@@ -212,8 +212,8 @@ color: var(--p-white);
 
 #services > div > div > div {
   padding-bottom: 10%;
+  margin-top: 20px;
 }
-
 
 /* ======SERVICES====== */
 
@@ -263,6 +263,7 @@ color: var(--p-white);
 #contact > div > a {
   background-color: var(--p-darkgray);
   color: var(--p-brightgreen);
+  border-color: var(--p-brightgreen);
 }
 
 #contact > div > h2 {
@@ -280,6 +281,15 @@ color: var(--p-white);
 }
 
 /* ======BOTTOM====== */
+
+/*
+background: rgba(69, 255, 0, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(69, 255, 0, 0.3);
+  */
 
 /* ======MY ADDITIONS====== */
 
