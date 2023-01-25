@@ -11747,7 +11747,7 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(var(--p-brightgreen), 1);
+    background-color: rgba(0, 3, 0, 0.9);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
   }
