@@ -20,7 +20,7 @@ function setup() {
     balls[i] = new Ball(
       random(width),
       random(height),
-      random(height / 10, height / 7),
+      random(height / 12, height / 9),
       i,
       balls
     );
@@ -97,8 +97,8 @@ class Ball {
   move() {
 
       this.vy += gravity;
-      this.x += this.vx / 8;
-      this.y += this.vy / 8;
+      this.x += this.vx / 16;
+      this.y += this.vy / 16;
       if (this.x + this.diameter / 2 > width) {
         this.x = width - this.diameter / 2;
         this.vx *= friction;
