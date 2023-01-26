@@ -2,7 +2,7 @@ var num = 500;
 var firstit = false;
 var noiseScale=500, noiseStrength=1;
 var particles = [num];
-var id = 'flowfield-canvas';
+var id = 'p5-canvas';
 
 function setup() {
 
@@ -57,7 +57,6 @@ class Particle {
     this.loc = _loc;
     this.dir = _dir;
     this.speed = _speed;
-  	// var col;
   }
 
   run() {
