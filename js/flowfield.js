@@ -1,6 +1,6 @@
 var num = 500;
 var firstit = false;
-var noiseScale=500, noiseStrength=1;
+var noiseScale=500, noiseStrength=0.5;
 var particles = [num];
 var id = 'p5-canvas';
 
@@ -16,7 +16,7 @@ function setup() {
   noStroke();
   for (let i=0; i<num; i++) {
     //x value start slightly outside the right of canvas, z value how close to viewer
-    var loc = createVector(random(width*1.2), random(height), 2);
+    var loc = createVector(random(width), random(height), 2);
     var angle = 0; //any value to initialize
     var dir = createVector(cos(angle), sin(angle));
     var speed = random(0.5,2);
@@ -79,7 +79,7 @@ class Particle {
     //float distance = dist(width/2, height/2, loc.x, loc.y);
     //if (distance>150) {
     if (this.loc.x<0 || this.loc.x>width || this.loc.y<0 || this.loc.y>height) {    
-      this.loc.x = random(width*1.2);
+      this.loc.x = random(width);
       this.loc.y = random(height);
     }
   }
